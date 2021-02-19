@@ -9,11 +9,11 @@ public class Client {
     @GeneratedValue
     int clientId;
     String name;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     City city;
     String address;
     long phone;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     Model model;
     public Client() {
 
