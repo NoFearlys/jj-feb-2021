@@ -13,6 +13,9 @@
         <maven.compiler.target>15</maven.compiler.target>
 
         <junit.version>4.12</junit.version>
+        <hibernate_core.version>RELEASE</hibernate_core.version>
+        <hibernate_entitymanager.version>5.4.28.Final</hibernate_entitymanager.version>
+        <h2.version>1.4.200</h2.version>
     </properties>
 
     <dependencies>
@@ -23,6 +26,22 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate_core.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${hibernate_entitymanager.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>${h2.version}</version>
+        </dependency>
     </dependencies>
+
 
 </project>
