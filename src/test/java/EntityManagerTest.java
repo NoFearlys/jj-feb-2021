@@ -11,6 +11,8 @@ public class EntityManagerTest {
     private EntityManagerFactory factory;
     private EntityManager manager;
 
+
+
     @Test
     public void smokeTest() {
         factory = Persistence.createEntityManagerFactory("TestPersistenceUnit");
